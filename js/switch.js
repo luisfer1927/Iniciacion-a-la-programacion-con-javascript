@@ -9,10 +9,10 @@ opcion = parseInt(prompt("Dame una opcion"));
 
 switch (opcion) {
     case 1:
-        console.log("Cargando...");
+        document.write("Cargando...");
         break;
     case 2:
-        console.log("Imprimiendo....");
+        document.write("Imprimiendo....");
         break;
     case 3:
         console.log("Saliendo...");
@@ -22,4 +22,3 @@ switch (opcion) {
         break;
 }
 
-gvccxzcx
