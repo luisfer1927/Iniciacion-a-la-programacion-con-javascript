@@ -4,7 +4,7 @@ const alumno = {
     nota: 6
 };
 console.log(alumno);
-alumno["nota"] = 5;
+alumno["nota"] = 5;  //cambia 
 console.log(alumno);
 console.log(alumno.nombre);
 console.log(alumno.nota);
@@ -33,13 +33,19 @@ let alumnaNueva = {
     nombre: "Maria",
     nota: 9
 };
-alumnos.push(alumnaNueva);
+
+let alumnoNuevo = {
+    nombre: "Jorge",
+    nota: 8
+}
+alumnos.push(alumnaNueva);  //para agregar un nuevo alumno
+alumnos.push(alumnoNuevo);
 console.log(alumnos);
-alumnos.splice(1, 1);  //borra un alumno posicion 1
-console.log(alumnos);
+alumnos.splice(2, 1);  //borra un alumno posicion 1
+// console.log(alumnos);
 
 //recorrer json
 for (let i=0; i<alumnos.length; i++){
-    console.log(`${alumnos[i].nombre}`);
-    document.write(`${alumnos[i].nombre}<br/>`);
+console.log(`${alumnos[i].nombre}`);
+document.write(`${alumnos[i].nombre}<br/>`);
 }
